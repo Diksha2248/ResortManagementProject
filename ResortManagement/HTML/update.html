@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <fieldset>
+        <legend align="Center">Update Room</legend>
+        <table>
+            <form action="../PHP/update.php" method="POST">
+                <tr>
+                    <td>id</td>
+                    <td><input type="number" name="id" placeholder="enter id"></td>
+                </tr>
+               <tr>
+                    <td>Name</td>
+                    <td> <input type="text" name="name"  placeholder="enter name"></td>
+                </tr>
+              <tr>
+                    <td>Phone</td>
+                    <td> <input type="phone" name="phone" placeholder="enter phone no."> </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="text" name="email" placeholder="enter email"></td>
+                </tr>
+                <tr>
+                    <td>Checkin</td>
+                    <td><input type="date" name="checkin" placeholder="checkin date"></td>
+                </tr>
+                <tr>
+                    <td>Checkout</td>
+                    <td> <input type="date" name="checkout" placeholder="checkout date"></td>
+                </tr>
+                <tr>
+                    <td>Room type</td>
+                    <td> <input type="radio" name="type" value="Family Room">Family Room</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="type" value="Bachelors Room">Bachelors Room<br></td> 
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="radio" name="type" value="Classic Bungalow Cottage">Classic Bungalow Cottage<br></td>
+               </tr>
+               <tr>
+                <td></td>
+                <td> <input type="radio" name="type" value="Presidential Room">Presidential Room<br></td>
+               </tr>
+           
+
+                <tr>
+                    <td>Number of rooms</td>
+                    <td><input type="number" name="roomno" placeholder="enter no. of rooms"></td>
+                </tr> 
+                <tr>
+                    <td>Adults</td>
+                    <td>  <input type="number" name="adults" placeholder="no. of adults" ></td>
+                <tr> 
+                <tr>
+                    <td>children</td>
+                    <td>  <input type="number" name="child" placeholder="no. of child" ></td>
+                <tr> 
+                <tr>
+                    <td>Address</td>
+                    <td>  <input type="text" name="address" placeholder="enter address" ></td>
+                <tr> 
+                    <td></td>
+                    <td><input type="submit" name="done" value="update"></td>
+                </tr>
+</form>  
+</fieldset>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
