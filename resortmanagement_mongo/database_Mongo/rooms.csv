@@ -1,0 +1,5 @@
+_id,image,roomtype,numberofrooms,cost_per_night,adults,facility,size
+1,img_3.jpg,Bachelors Room,49,150,2,"Closet with Hangers,HD flat-screen TV,Telephone",20 sqm
+2,img_4.jpg,Classic Bungalow Cot,30,1000,8,"Closet with Hangers,HD flat-screen TV,Telephone",200 sqm
+3,bg_2.jpg,Family Room,50,245,6,"Closet with Hangers,HD flat-screen TV,Telephone",600sqm
+4,img_5.jpg,Presidential Room,0,350,4,"Closet with Hangers,HD flat-screen TV,Telephone",80 sqm
