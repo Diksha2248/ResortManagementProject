@@ -1,0 +1,77 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../CSS/styles1.css">
+     
+  
+    <script type="text/javascript">
+      function chkName()
+      {
+        var letters = /^[a-zA-Z-,]+(\s{0,1}[a-zA-Z-, ])*$/;
+        if(document.getElementById("name").value.match(letters))
+        {
+          
+        }
+        else
+        {
+          alert('Invalid Name');
+          return false;
+        }
+      }
+      function chkPhone()
+      {
+        
+        if(document.getElementById("Phone").value.length!=10)
+        {
+            alert("Not a valid Phone Number");
+            return false;
+        } 
+      }
+     
+      function checkData()
+      {
+        
+        chkName();
+        chkPhone();
+      
+      }
+    </script>
+</head>
+
+<body>
+    <div class="container-fluid bg">
+            <div class="row">
+            <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            <div class="col-md-4 col-sm-4 col-xs-12">
+                    <form action="storeop.php" name="form1" class="form-con" method="POST">
+                        <h1>Sign Up</h1>
+                          <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" name="Name" id="name" placeholder="Name" onchange="chkName()" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleInputEmail1">Email address</label>
+                            <input type="email" class="form-control" name="email"id="exampleInputEmail1" placeholder="Email" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" class="form-control" name="password" id="password"  placeholder="Password" required>
+                          </div>
+                          <div class="form-group">
+                            <label for="Phone">Phone</label>
+                            <input type="number" class="form-control" name="Phone" id="Phone" placeholder="Phone" onchange="chkPhone()" required>
+                          </div>
+                                     
+                        <input type="submit" class="btn btn-success btn-block" value="Sign Up" id="check" onclick="checkData(),document.location='signin.html'">
+                        <input type="button" class="btn btn-success btn-block" value="Already Have Account!" onclick="document.location='signin.html'">
+                    </form>
+                <div class="col-md-4 col-sm-4 col-xs-12"></div>
+            </div>
+        </div>
+    </div>
+<script src="maxdate.js"></script>
+</body>
+</html>

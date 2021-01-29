@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Admin page</title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+     <!-- Required meta tags -->
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+  <?php
+        session_start();
+    ?>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        
+        <a class="navbar-brand" href="../index.php"></a>
+        <img src="logo.png" alt="" height="70px" style="margin-left: 70px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-left: 350px;">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="home.php">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="rooms.php">Rooms</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="services.php">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="about.php">About US</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./HTML/contact.html">Contact</a>
+              </li>
+          </ul>
+                
+      <form class="d-flex">
+        <a class="btn btn-primary" href="./HTML/adminlogout.php" role="button" style="margin-right:20px;margin-top:20px;">Log Out</a>
+   
+     </form>
+        </div>
+</nav>
+       
+<div class="block-30 block-30-sm item">
+        <div class="container-fluid">
+            <div class="jumbotron jumbotron">
+                <div class="col-md-10">
+                    
+                    <h1 class="display-3"><b>WELCOME ADMIN</b></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div>
+      <h2>&nbsp    >Check Booking Details</h2>
+      &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp<a href="bookshow.php" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Booking Records</a>
+      <br>
+      <br>
+      <br>
+
+      <h2>&nbsp >Room Status</h2>
+      &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp <a href="roomtable.php" class="btn btn-danger btn-lg " tabindex="-1" role="button" aria-disabled="true">Room Records</a>
+      <br>
+      <br>
+      <br>
+      
+    
+
+      <h2>&nbsp >Review Status</h2>
+      &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp <a href="showreview.php" class="btn btn-primary btn-lg " tabindex="-1" role="button" aria-disabled="true">Review Records</a>
+      <br>
+      <br>
+      <br>
+      
+      <h2>&nbsp >Check Feedback Records</h2>
+      &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp <a href="feedbackshow.php" class="btn btn-success btn-lg " tabindex="-1" role="button" aria-disabled="true">Feedback Records</a>
+ 
+    </div>
+      <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
